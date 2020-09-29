@@ -1,0 +1,64 @@
+
+<%- include('header') %>
+
+
+
+
+<div class="jumbotron">
+<h2 style="text-align:center">Doctor login</h2>
+<hr>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+    <table class="table table-dark">
+<thead>
+  <tr>
+    <th scope="col">Mob.</th>
+    <th scope="col">Name</th>
+    <th scope="col">DOB</th>
+    <th scope="col">Weight</th>
+    <th scope="col">Height</th>
+    <th scope="col">Marital-Status</th>
+    <th scope="col">Allergic-to</th>
+  </tr>
+</thead>
+<tbody>
+  <%  details.forEach(function(item){ %>
+
+  <tr>
+    <th scope="row"><%=item.mobile%></th>
+    <td><%=item.fullname%></td>
+    <td><%=item.dob%></td>
+    <td><%=item.weight%></td>
+    <td><%=item.height%></td>
+    <td><%=item.marital%></td>
+    <td><%=item.allergy%></td>
+  </tr>
+
+
+  <% }) %>
+
+  <!-- <tr>
+    <th scope="row">2</th>
+    <td>Jacob</td>
+    <td>Thornton</td>
+    <td>@fat</td>
+  </tr>
+  <tr>
+    <th scope="row">3</th>
+    <td>Larry</td>
+    <td>the Bird</td>
+    <td>@twitter</td>
+  </tr> -->
+</tbody>
+</table>
+</div>
+    <div class="col-sm-1"></div>
+  </div>
+
+    </div>
+
+
+
+
+    <%- include('footer') %>

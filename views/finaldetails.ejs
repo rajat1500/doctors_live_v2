@@ -1,0 +1,81 @@
+
+<%- include('header') %>
+
+<div class="jumbotron">
+  <h1></h1>
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <h1> Details of <%= finaldetails.fullname%></h1>
+    <table class="table table-bordered">
+
+      <tbody>
+        <tr class="table-success">
+          <th scope="row">Mobile Number</th>
+          <td><%= finaldetails.mobile%></td>
+        </tr>
+        <tr class="table-danger">
+          <th scope="row">Email id</th>
+          <td><%= finaldetails.email%></td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">Date of Birth</th>
+          <td colspan="2"><%= finaldetails.dob%></td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">Weight (kg)</th>
+          <td colspan="2"><%= finaldetails.weight%></td>
+        </tr>
+        <tr class="table-danger">
+          <th scope="row">Height (inches)</th>
+          <td colspan="2"><%= finaldetails.height%></td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">Fathers Name</th>
+          <td colspan="2"><%= finaldetails.fathersname%></td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">Mothers Name</th>
+          <td colspan="2"><%= finaldetails.mothersname%></td>
+        </tr>
+        <tr class="table-danger">
+          <th scope="row">Marital Status</th>
+          <td colspan="2"><%= finaldetails.marital%></td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">Allergic to</th>
+          <td colspan="2"><%= finaldetails.allergy%></td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">Address</th>
+          <td colspan="2"><%= finaldetails.address%></td>
+        </tr>
+        <tr class="table-danger">
+          <th scope="row">State</th>
+          <td colspan="2"><%= finaldetails.state%></td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">City</th>
+          <td colspan="2"><%= finaldetails.city%></td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">Zip</th>
+          <td colspan="2"><%= finaldetails.zip%></td>
+        </tr>
+        <tr class="table-danger">
+          <th scope="row">Addhar</th>
+          <td colspan="2"><%= finaldetails.addhar%></td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">Department</th>
+          <td colspan="2"><%= finaldetails.department%></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+  </div>
+
+
+  <%- include('footer') %>

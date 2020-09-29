@@ -1,0 +1,38 @@
+<%- include('header') %>
+
+<div class="jumbotron">
+  <div  class="container">
+<h2 style="text-align:center">Doctor login</h2>
+<hr>
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div style="background-color:#08364b" class="col-sm-6">
+      <form method="POST" style="padding:20px 20px" >
+<div class="form-group">
+  <label style="color:white" for="email">Email</label>
+  <input type="email" name="doctoremail" class="form-control"  placeholder="Enter email" required>
+</div>
+<div class="form-group">
+  <label style="color:white" for="password">Password</label>
+  <input type="password" name="doctorpassword" class="form-control"  placeholder="Password" required>
+</div>
+
+<div class="form-group">
+    <label style="color:white" for="name">Department</label>
+  <select name="doctordepartment" class="form-control">
+    <option>Select</option>
+    <option>Ortho</option>
+    <option>Cancer</option>
+    <option>Dental</option>
+    <option>Covid</option>
+  </select>
+</div>
+<button type="submit" formaction="/postdoctorlogin" class="btn btn-warning">Submit</button>
+</form>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
+    </div>
+
+    <%- include('footer') %>

@@ -1,0 +1,32 @@
+.navbar-brand{
+  padding: 0;
+
+}
+h3{
+font-family: 'Libre Baskerville', serif;
+}
+.bg{
+  background-color: #08364b;
+}
+.textcolor{
+  color: #709fb0;
+  font-size: 40px;
+}
+/* .imgcont{
+  padding: 0 100px;
+} */
+.cont2{
+  padding-top: 50px;
+}
+p{
+  color: #a6a6a4;
+}
+.color{
+  background-color: #08364b;
+}
+.check{
+  padding-bottom: 10px;
+}
+#con_doc{
+  text-align: center;
+}

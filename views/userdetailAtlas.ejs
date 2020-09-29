@@ -1,0 +1,127 @@
+<%- include('header') %>
+
+<div>
+  <h1 style="text-align: center">Complete Your Details</h1>
+</div>
+<hr>
+
+
+
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-8">
+
+      <div class="container">
+        <form method="POST" style="padding:20px 20px; background-color: #08364b;">
+          <div class="form-group">
+            <label style="color:white"  for="inputNumber">Mobile-Number</label>
+            <input type="number" name="mobile" value="<%= details.mobile%>" class="form-control" id="inputNumber" placeholder="Mobile-Number">
+          </div>
+          <div class="form-group">
+            <label style="color:white" for="inputDepartment">Department</label>
+            <input type="text" name="department" value="<%= details.kindofpatient%>" class="form-control" id="inputDepartment" placeholder="Department">
+          </div>
+          <div class="form-group">
+            <label style="color:white" for="inputName">Full-Name</label>
+            <input type="text" name="fullname" value="<%= details.name%>" class="form-control" id="inputName" placeholder="FullName">
+          </div>
+          <div class="form-group">
+            <label style="color:white" for="inputEmail4">Email</label>
+            <input type="email" name="email" value="<%= details.email%>" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-sm-4">
+              <label style="color:white" for="inputDOB">Date-of-Birth</label>
+              <input type="date" name="dob" class="form-control" id="inputDOB">
+            </div>
+            <div class="form-group col-sm-4">
+              <label style="color:white" for="inputWeight">Weight in kg</label>
+              <input type="number" name="weight"  placeholder="Weight" class="form-control" id="inputWeight">
+            </div>
+            <div class="form-group col-sm-4">
+              <label style="color:white" for="inputHeight">Height in inches</label>
+              <input type="number" name="height" placeholder="Height" class="form-control" id="inputHeight">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-sm-4">
+              <label style="color:white" for="inputFather">Fathers Name</label>
+              <input type="text" name="fathersname" placeholder="Fathers Name" class="form-control" id="inputFather">
+            </div>
+            <div class="form-group col-sm-4">
+              <label style="color:white" for="inputMother">Mothers Name</label>
+              <input type="text" name="mothersname" placeholder="Mothers Name" class="form-control" id="inputMother">
+            </div>
+            <div class="form-group col-sm-4">
+              <label style="color:white" for="inputMarital">Marital-Status</label>
+              <select id="inputMarital" name="marital" class="form-control">
+                <option selected>Choose...</option>
+                <option>Married</option>
+                <option>Unmarried</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label style="color:white" for="inputAllergy">Allergic To</label>
+            <select id="inputAllergy" name="allergy" class="form-control">
+              <option selected>Choose...</option>
+              <option>Allergy1</option>
+              <option>Allergy2</option>
+              <option>Allergy3</option>
+              <option>Allergy4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label style="color:white" for="inputAddress">Address</label>
+            <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label style="color:white" for="inputCity">City</label>
+              <input type="text" name="city" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label style="color:white" for="inputState">State</label>
+              <select id="inputState" name="state" class="form-control">
+                <option selected>Choose...</option>
+                <option>state1</option>
+                <option>state2</option>
+                <option>state3</option>
+                <option>state4</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label style="color:white" for="inputZip">Zip</label>
+              <input type="text" name="zip" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <label style="color:white" for="inputAddhar">Addhar Number</label>
+            <input type="Number" name="addhar" class="form-control" id="inputAddhar" placeholder="123-567-890">
+          </div>
+
+          <button type="submit" class="btn btn-primary" formaction="/completeuserdetail">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+<%- include('footer') %>

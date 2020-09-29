@@ -1,0 +1,215 @@
+  <%- include('header') %>
+
+
+
+  <!-- carousel%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <div class="fluid-container">
+    <div id="slider" class="carousel slide " data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active item" id="slide1">
+          <img class="d-block w-100" src="css/img1.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Welcome to Advanced Hygiene Care!</h4>
+            <p>Where healing hands come to you!</p>
+          </div>
+        </div>
+        <div class="carousel-item item">
+          <img class="d-block w-100" src="css/img2.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Welcome to Advanced Hygiene Care!</h4>
+            <p>Where healing hands come to you!</p>
+          </div>
+        </div>
+        <div class="carousel-item item">
+          <img class="d-block w-100" src="css/img3.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Welcome to Advanced Hygiene Care!</h4>
+            <p>Where healing hands come to you!</p>
+          </div>
+        </div>
+        <div class="carousel-item item">
+          <img class="d-block w-100" src="css/img4.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Welcome to Advanced Hygiene Care!</h4>
+            <p>Where healing hands come to you!</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container cont2">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 style="font-family: 'Pacifico', cursive; color:#709fb0;">Who we are .......</h2>
+        <h3>Welcome to Live-Doctors</h3>
+        <p>Lorem ipsum has become the industry standard for design mockups and prototypes. By adding a little bit of Latin to a mockup, you’re able
+          to show clients a more complete version of your design without actually having to invest time and effort drafting copy.
+          But despite all its benefits, seeing the same random Latin text in every design can get a little boring for you and your clients.
+          So if you have a client who’s got a sense of humor or if you’re just tired of going the traditional route in your mockups, here are 15 creative
+          and funny lorem ipsum text generators that are sure to lighten the mood at any client meeting.</p>
+        <button type="button" class="btn btn-outline-warning">View Services</button>
+      </div>
+      <div class="col-md-3">
+        <img class="imgcont" src="css/images.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- form -->
+
+
+  <div class="container cont2">
+    <div id="patlog" class="row jumbotron">
+      <div class="col-lg-5 color">
+        <!-- login-form -->
+        <form method="POST" style="padding: 20px 0;">
+          <h5 style="color:white;">User-Login</h5>
+          <div class="form-group">
+            <input type="number" id="plch" class="form-control"  name="mobilelogged" placeholder="Mobile Number">
+            <small style="color:white;" id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+          </div>
+          <div style="display:none" id="loginsendotp" class="form-group">
+          <button type="submit" id="resend" formaction="/loginverification" class="btn btn-outline-warning btn-sm" name="button" onclick="myfunction2()">send otp</button>
+          </div>
+          <div id="pwdholder" class="form-group">
+            <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div style="display:none" id="otpholder" class="form-group">
+            <input type="number" name="enteryourotp" class="form-control" placeholder="enter your otp">
+          </div>
+          <div id="loginbtn" class="form-group">
+          <button type="button" class="btn btn-outline-warning btn-sm" name="button" onclick="myfunction()">Login with otp</button>
+          </div>
+
+          <button type="submit" class="btn btn-warning" formaction="/login">Submit</button>
+        </form>
+      </div>
+      <div style="padding:30px 0;" class="col-lg-1">
+
+      </div>
+      <div class="col-lg-6">
+        <p>Lorem ipsum has become the industry standard for design mockups and prototypes. By adding a little bit of Latin to a mockup, you’re able
+          to show clients a more complete version of your design without actually having to invest time and effort drafting copy.
+          But despite all its benefits, seeing the same random Latin text in every design can get a little boring for you and your clients.
+          So if you have a client who’s got a sense of humor or if you’re just tired of going the traditional route in your mockups, here are 15 creative
+          and funny lorem ipsum text generators that are sure to lighten the mood at any client meeting.</p>
+        <button type="button" class="btn btn-outline-warning">Read More</button>
+      </div>
+    </div>
+    <div class="row jumbotron">
+      <div class="col-lg-6">
+        <p>Lorem ipsum has become the industry standard for design mockups and prototypes. By adding a little bit of Latin to a mockup, you’re able
+          to show clients a more complete version of your design without actually having to invest time and effort drafting copy.
+          But despite all its benefits, seeing the same random Latin text in every design can get a little boring for you and your clients.
+          So if you have a client who’s got a sense of humor or if you’re just tired of going the traditional route in your mockups, here are 15 creative
+          and funny lorem ipsum text generators that are sure to lighten the mood at any client meeting.</p>
+        <button type="button" class="btn btn-outline-warning">Read More</button>
+      </div>
+      <div style="padding:30px 0;" class="col-lg-1">
+
+      </div>
+
+      <div id="newlogin" class="col-lg-5 color">
+        <form method="POST" style="padding: 20px 0;">
+          <h5 style="color:white;">New-Login</h5>
+          <div class="form-group">
+            <input type="number" class="form-control" id="mobileval" value="" name="mobilenumber" placeholder="Mobile Number" required="true">
+          </div>
+          <div class="form-group">
+            <button id="verify" type="submit" class="btn btn-outline-warning btn-sm" formaction="/otpverification" onclick="document.getElementById('verify2').innerHTML = addmember();">verify</button>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="text" name="name" class="form-control"  placeholder="Name">
+          </div>
+          <div style="display:none;"  id="otpbox" class="form-group">
+            <input type="number" name="verifyotp" class="form-control" placeholder="enter your otp">
+          </div>
+          <div class="form-group">
+            <select name="kindofpatient" class="form-control">
+              <option>Select-Department</option>
+              <option>Ortho</option>
+              <option>Cancer</option>
+              <option>Dental</option>
+              <option>Covid</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" class="form-control"  placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-warning" formaction="/register" >Register</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/*/*/*/*/*/*/*/*/consult Doctor*/*/*/*/*/*/*/*/*/*/*/*/**/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/-->
+
+  <div id="appointment" class="container">
+    <h3 id="con_doc">Consult Doctor</h3>
+    <div class="row jumbotron">
+
+      <div class="col-md-5 color">
+        <form style="padding: 20px 0;">
+          <h5 style="color:white;">Record Your Problem</h5>
+      <div class="form-group">
+
+    </div>
+
+            <button type="submit" class="btn btn-outline-warning btn-sm">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+
+      <div class="col-md-5 color">
+        <form style="padding: 20px 0;">
+          <h5 style="color:white;">Patient-Problem</h5>
+          <div class="form-group">
+            <textarea class="form-control" aria-label="With textarea" placeholder="Describe Your Problem"></textarea>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option>Select-Department</option>
+              <option>Ortho</option>
+              <option>Cancer</option>
+              <option>Dental</option>
+              <option>Covid</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-warning btn-sm">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+<%- include('footer') %>
